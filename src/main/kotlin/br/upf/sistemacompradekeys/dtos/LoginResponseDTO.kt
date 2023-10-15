@@ -1,3 +1,3 @@
-package br.upf.sistemaeventos.dtos
+package br.upf.sistemacompradekeys.dtos
 
 data class LoginResponseDTO(val login: String)

@@ -1,8 +1,8 @@
-package br.upf.sistemajogos.converters
+package br.upf.sistemacompradekeys.converters
 
-import br.upf.sistemaeventos.dtos.JogoDTO
-import br.upf.sistemaeventos.dtos.JogoResponseDTO
-import br.upf.sistemaeventos.model.Jogo
+import br.upf.sistemacompradekeys.dtos.JogoDTO
+import br.upf.sistemacompradekeys.dtos.JogoResponseDTO
+import br.upf.sistemacompradekeys.model.Jogo
 import org.springframework.stereotype.Component
 
 @Component

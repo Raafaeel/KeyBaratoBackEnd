@@ -1,4 +1,4 @@
-package br.upf.sistemaeventos
+package br.upf.sistemacompradekeys
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

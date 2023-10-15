@@ -1,8 +1,8 @@
-package br.upf.sistemaeventos.converters
+package br.upf.sistemacompradekeys.converters
 
-import br.upf.sistemaeventos.dtos.UsuarioDTO
-import br.upf.sistemaeventos.dtos.UsuarioResponseDTO
-import br.upf.sistemaeventos.model.Usuario
+import br.upf.sistemacompradekeys.dtos.UsuarioDTO
+import br.upf.sistemacompradekeys.dtos.UsuarioResponseDTO
+import br.upf.sistemacompradekeys.model.Usuario
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.stereotype.Component
 

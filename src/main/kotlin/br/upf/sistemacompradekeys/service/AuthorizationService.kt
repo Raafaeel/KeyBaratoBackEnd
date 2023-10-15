@@ -1,6 +1,6 @@
-package br.upf.sistemaeventos.service
+package br.upf.sistemacompradekeys.service
 
-import br.upf.sistemaeventos.repository.UsuarioRepository
+import br.upf.sistemacompradekeys.repository.UsuarioRepository
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.stereotype.Service
 

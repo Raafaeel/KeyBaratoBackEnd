@@ -1,6 +1,6 @@
-package br.upf.sistemaeventos.service
+package br.upf.sistemacompradekeys.service
 
-import br.upf.sistemaeventos.model.Usuario
+import br.upf.sistemacompradekeys.model.Usuario
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
 import com.auth0.jwt.exceptions.JWTCreationException

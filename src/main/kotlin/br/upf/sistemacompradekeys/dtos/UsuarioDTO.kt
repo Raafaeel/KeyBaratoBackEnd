@@ -1,4 +1,4 @@
-package br.upf.sistemaeventos.dtos
+package br.upf.sistemacompradekeys.dtos
 
 data class UsuarioDTO(
     val cpf: Int,

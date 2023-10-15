@@ -1,8 +1,8 @@
-package br.upf.sistemaeventos.controller
+package br.upf.sistemacompradekeys.controller
 
-import br.upf.sistemaeventos.dtos.JogoDTO
-import br.upf.sistemaeventos.dtos.JogoResponseDTO
-import br.upf.sistemaeventos.service.JogoService
+import br.upf.sistemacompradekeys.dtos.JogoDTO
+import br.upf.sistemacompradekeys.dtos.JogoResponseDTO
+import br.upf.sistemacompradekeys.service.JogoService
 import jakarta.transaction.Transactional
 import jakarta.validation.Valid
 import org.springframework.data.domain.Page

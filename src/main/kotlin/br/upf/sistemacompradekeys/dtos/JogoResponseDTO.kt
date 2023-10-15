@@ -1,7 +1,7 @@
-package br.upf.sistemaeventos.dtos
+package br.upf.sistemacompradekeys.dtos
 
-import br.upf.sistemaeventos.model.Compra
-import br.upf.sistemaeventos.model.StatusDisp
+import br.upf.sistemacompradekeys.model.Compra
+import br.upf.sistemacompradekeys.model.StatusDisp
 
 
 data class JogoResponseDTO (

@@ -1,4 +1,4 @@
-package br.upf.sistemaeventos.exceptions
+package br.upf.sistemacompradekeys.exceptions
 
 import java.lang.RuntimeException
 

@@ -1,7 +1,7 @@
-package br.upf.sistemaeventos.config
+package br.upf.sistemacompradekeys.config
 
-import br.upf.sistemaeventos.repository.UsuarioRepository
-import br.upf.sistemaeventos.service.TokenService
+import br.upf.sistemacompradekeys.repository.UsuarioRepository
+import br.upf.sistemacompradekeys.service.TokenService
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse

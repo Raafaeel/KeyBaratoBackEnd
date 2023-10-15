@@ -11,8 +11,8 @@
 	<groupId>br.upf</groupId>
 	<artifactId>Backend-g2a</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Sistema de Eventos</name>
-	<description>Sistema de eventos</description>
+	<name>Sistema de Venda de Keys</name>
+	<description>Sistema de Venda de Keys</description>
 	<properties>
 		<java.version>17</java.version>
 		<kotlin.version>1.8.22</kotlin.version>

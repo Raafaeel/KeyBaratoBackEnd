@@ -1,11 +1,11 @@
-package br.upf.sistemaeventos.controller
+package br.upf.sistemacompradekeys.controller
 
-import br.upf.sistemaeventos.dtos.LoginDTO
-import br.upf.sistemaeventos.dtos.LoginResponseDTO
-import br.upf.sistemaeventos.dtos.UsuarioDTO
-import br.upf.sistemaeventos.model.Usuario
-import br.upf.sistemaeventos.service.TokenService
-import br.upf.sistemaeventos.service.UsuarioService
+import br.upf.sistemacompradekeys.dtos.LoginDTO
+import br.upf.sistemacompradekeys.dtos.LoginResponseDTO
+import br.upf.sistemacompradekeys.dtos.UsuarioDTO
+import br.upf.sistemacompradekeys.model.Usuario
+import br.upf.sistemacompradekeys.service.TokenService
+import br.upf.sistemacompradekeys.service.UsuarioService
 import org.springframework.http.ResponseEntity
 import org.springframework.security.authentication.AuthenticationManager
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken

@@ -1,4 +1,4 @@
-package br.upf.sistemaeventos.config
+package br.upf.sistemacompradekeys.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -27,11 +27,11 @@ class SecurityConfigurations(val securityFilter: SecurityFilter) {
                 it.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             }
             .authorizeHttpRequests {
-                it.requestMatchers(HttpMethod.POST, "/jogos").hasRole("ADMIN")
-                    .requestMatchers(HttpMethod.GET, "/jogos", "/jogos/*").permitAll()
-                    .requestMatchers("/jogos/*").hasRole("ADMIN")
+                it.requestMatchers(HttpMethod.POST, "/Jogos").hasRole("ADMIN")
+                    .requestMatchers(HttpMethod.GET, "/Jogos", "/Jogos/*").permitAll()
+                    .requestMatchers("/Jogos/*").hasRole("ADMIN")
                     .requestMatchers("/auth/*").permitAll()
-                    .requestMatchers("/jogos/*").hasRole("ADMIN")
+                    .requestMatchers("/Jogos/*").hasRole("ADMIN")
                     .anyRequest().authenticated()
             }
             .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter::class.java)
