@@ -11,8 +11,8 @@ import jakarta.persistence.OneToMany
 @Entity
 data class Jogo(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long? = null,
-    val key: String,
+        val id: Long? = null,
+    val chave: String,
     val regiao: String,
     val descricao: String,
     var preco: Double,

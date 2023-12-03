@@ -1,7 +1,7 @@
 package br.upf.sistemaeventos.dtos
 
 data class UsuarioDTO(
-    val cpf: Int,
+    val cpf: Long,
     val username: String,
     val regiao: String,
     val telefone: String,

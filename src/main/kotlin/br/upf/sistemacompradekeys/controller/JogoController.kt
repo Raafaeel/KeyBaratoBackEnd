@@ -23,15 +23,15 @@ import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.util.UriComponentsBuilder
 
 @RestController
-@RequestMapping("/Jogos")
+@RequestMapping("/Jogo")
 class JogoController(val service: JogoService) {
 
     @GetMapping
     fun listar(
-        @RequestParam(required = false) nomeJogo: String?,
+        @RequestParam(required = false) descricaoJogo: String?,
         @PageableDefault(size = 10) paginacao: Pageable)
     : Page<JogoResponseDTO> {
-        return service.listar(nomeJogo, paginacao)
+        return service.listar(descricaoJogo, paginacao)
     }
 
     @GetMapping("/{id}")

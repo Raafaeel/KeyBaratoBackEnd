@@ -6,7 +6,7 @@ import br.upf.sistemaeventos.model.StatusDisp
 
 data class JogoResponseDTO (
         val id: Long?,
-        val key: String,
+        val chave: String,
         val regiao: String,
         val preco: Double,
         val descricao: String,

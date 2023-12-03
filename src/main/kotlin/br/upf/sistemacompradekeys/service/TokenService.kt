@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 package br.upf.sistemaeventos.service
 
 import br.upf.sistemaeventos.model.Usuario
@@ -46,3 +47,6 @@ class TokenService {
         LocalDateTime.now().plusHours(2)
             .toInstant(ZoneOffset.of("-03:00"))
 }
+=======
+//
+>>>>>>> Stashed changes

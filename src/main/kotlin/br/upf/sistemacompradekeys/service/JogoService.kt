@@ -18,12 +18,12 @@ class JogoService(
 ) {
 
     fun listar(
-        nomeJogo: String?,
+        descriacaoJogo: String?,
         paginacao: Pageable): Page<JogoResponseDTO> {
-        val jogos = if (nomeJogo == null) {
+        val jogos = if (descriacaoJogo == null) {
             repository.findAll(paginacao)
         } else {
-            repository.findByNome(nomeJogo, paginacao)
+            repository.findByDescricao(descriacaoJogo, paginacao)
         }
         return jogos
             .map(converter::toJogoResponseDTO)
@@ -46,7 +46,6 @@ class JogoService(
             .orElseThrow { NotFoundException(EVENTO_NOT_FOUND_MESSAGE) }
             .copy(
                 regiao = dto.regiao,
-                key = dto.key,
                 preco = dto.preco,
                 descricao = dto.descricao,
                 status = dto.status

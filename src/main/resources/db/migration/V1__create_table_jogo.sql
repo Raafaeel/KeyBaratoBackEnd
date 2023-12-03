@@ -4,7 +4,7 @@ CREATE TABLE `jogo` (
  `chave` varchar(30) NOT NULL,
  `preco` double NOT NULL,
  `descricao` varchar(255) NOT NULL,
- `status` enum('    PREVENDA',
-                    'DISPONIVEL',
+ `status` enum('PREVENDA',
+                    'DISP',
                     'ESGOTADO') DEFAULT NULL
 );

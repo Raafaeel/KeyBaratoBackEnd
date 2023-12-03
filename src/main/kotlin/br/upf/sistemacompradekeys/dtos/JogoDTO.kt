@@ -10,7 +10,7 @@ import java.time.LocalDateTime
 data class JogoDTO(
     @field:NotBlank(message = "Jogo sempre deve ter um nome")
     val descricao: String,
-    val key: String,
+    val chave: String,
     @field:NotNull(message = "Jogo sempre deve ter uma região")
     val regiao: String,
     @field:NotNull(message = "Jogo sempre deve ter preço")

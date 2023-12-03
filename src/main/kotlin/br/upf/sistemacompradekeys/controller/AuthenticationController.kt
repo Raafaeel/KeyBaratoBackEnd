@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 package br.upf.sistemaeventos.controller
 
 import br.upf.sistemaeventos.dtos.LoginDTO
@@ -36,3 +37,6 @@ class AuthenticationController(
         return ResponseEntity.ok().build()
     }
 }
+=======
+//
+>>>>>>> Stashed changes
