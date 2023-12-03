@@ -13,7 +13,6 @@ import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.security.web.SecurityFilterChain
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
 
-<<<<<<< Updated upstream
 @Configuration
 @EnableWebSecurity
 class SecurityConfigurations(val securityFilter: SecurityFilter) {
@@ -51,6 +50,3 @@ class SecurityConfigurations(val securityFilter: SecurityFilter) {
         return BCryptPasswordEncoder()
     }
 }
-=======
-//
->>>>>>> Stashed changes

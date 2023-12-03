@@ -1,6 +1,6 @@
 package br.upf.sistemaeventos.config
 
-<<<<<<< Updated upstream
+
 import br.upf.sistemaeventos.repository.UsuarioRepository
 import br.upf.sistemaeventos.service.TokenService
 import jakarta.servlet.FilterChain
@@ -37,6 +37,3 @@ class SecurityFilter(
         return authHeader?.replace("Bearer ", "")
     }
 }
-=======
-//
->>>>>>> Stashed changes
