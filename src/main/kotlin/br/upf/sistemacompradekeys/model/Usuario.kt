@@ -3,13 +3,15 @@ package br.upf.sistemacompradekeys.model
 import jakarta.persistence.Entity
 import jakarta.persistence.EnumType
 import jakarta.persistence.Enumerated
+import jakarta.persistence.Id
 import jakarta.persistence.OneToMany
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
 
 @Entity
 data class Usuario(
-    val cpf: Int,
+    @Id
+        val cpf: Long,
     //val username: String,
     val senha: String,
     val email: String,

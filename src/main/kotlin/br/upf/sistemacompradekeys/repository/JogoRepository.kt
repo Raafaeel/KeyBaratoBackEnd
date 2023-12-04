@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface JogoRepository: JpaRepository<Jogo, Long> {
-   fun findByNome(descricaoJogo: String, paginacao: Pageable): Page<Jogo>
+   fun findByDescricao(descricaoJogo: String, paginacao: Pageable): Page<Jogo>
 }

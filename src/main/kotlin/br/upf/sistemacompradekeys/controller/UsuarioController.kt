@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.util.UriComponentsBuilder
 
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/usuario")
 class UsuarioController(val service: UsuarioService) {
 
     @GetMapping
@@ -38,7 +38,7 @@ class UsuarioController(val service: UsuarioService) {
                  uriBuilder: UriComponentsBuilder
     ): ResponseEntity<UsuarioResponseDTO> {
         val userResponse = service.cadastrar(dto)
-        val uri = uriBuilder.path("/usuarios/${userResponse.cpf}")
+        val uri = uriBuilder.path("/usuario/${userResponse.cpf}")
             .build().toUri()
         return ResponseEntity.created(uri).body(userResponse)
     }

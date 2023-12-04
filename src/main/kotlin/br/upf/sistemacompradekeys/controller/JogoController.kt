@@ -23,15 +23,15 @@ import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.util.UriComponentsBuilder
 
 @RestController
-@RequestMapping("/Jogos")
+@RequestMapping("/Jogo")
 class JogoController(val service: JogoService) {
 
     @GetMapping
     fun listar(
-        @RequestParam(required = false) nomeJogo: String?,
+        @RequestParam(required = false) descricaoJogo: String?,
         @PageableDefault(size = 10) paginacao: Pageable)
     : Page<JogoResponseDTO> {
-        return service.listar(nomeJogo, paginacao)
+        return service.listar(descricaoJogo, paginacao)
     }
 
     @GetMapping("/{id}")
@@ -45,7 +45,7 @@ class JogoController(val service: JogoService) {
                  uriBuilder: UriComponentsBuilder
     ): ResponseEntity<JogoResponseDTO> {
         val jogoResponse = service.cadastrar(dto)
-        val uri = uriBuilder.path("/Jogos/${jogoResponse.id}")
+        val uri = uriBuilder.path("/Jogo/${jogoResponse.id}")
             .build().toUri()
         return ResponseEntity.created(uri).body(jogoResponse)
     }

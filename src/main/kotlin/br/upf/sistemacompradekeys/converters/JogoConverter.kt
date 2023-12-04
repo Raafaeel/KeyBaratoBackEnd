@@ -10,7 +10,7 @@ class JogoConverter {
     fun toJogo(dto: JogoDTO): Jogo {
         return Jogo(
             descricao = dto.descricao,
-            key = dto.key,
+            chave = dto.chave,
             regiao = dto.regiao,
             preco = dto.preco,
             status = dto.status,
@@ -21,7 +21,7 @@ class JogoConverter {
     fun toJogoResponseDTO(jogo: Jogo): JogoResponseDTO {
         return JogoResponseDTO(
             id = jogo.id,
-            key = jogo.key,
+            chave = jogo.chave,
             descricao = jogo.descricao,
             regiao = jogo.regiao,
             preco = jogo.preco,
