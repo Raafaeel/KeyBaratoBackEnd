@@ -1,8 +1,8 @@
-package br.upf.sistemaeventos.controller
+package br.upf.sistemacompradekeys.controller
 
-import br.upf.sistemaeventos.dtos.JogoDTO
-import br.upf.sistemaeventos.dtos.JogoResponseDTO
-import br.upf.sistemaeventos.service.JogoService
+import br.upf.sistemacompradekeys.dtos.JogoDTO
+import br.upf.sistemacompradekeys.dtos.JogoResponseDTO
+import br.upf.sistemacompradekeys.service.JogoService
 import jakarta.transaction.Transactional
 import jakarta.validation.Valid
 import org.springframework.data.domain.Page
@@ -23,15 +23,15 @@ import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.util.UriComponentsBuilder
 
 @RestController
-@RequestMapping("/Jogos")
+@RequestMapping("/Jogo")
 class JogoController(val service: JogoService) {
 
     @GetMapping
     fun listar(
-        @RequestParam(required = false) nomeJogo: String?,
+        @RequestParam(required = false) idJogo: Long?,
         @PageableDefault(size = 10) paginacao: Pageable)
     : Page<JogoResponseDTO> {
-        return service.listar(nomeJogo, paginacao)
+        return service.listar(idJogo, paginacao)
     }
 
     @GetMapping("/{id}")
@@ -45,7 +45,7 @@ class JogoController(val service: JogoService) {
                  uriBuilder: UriComponentsBuilder
     ): ResponseEntity<JogoResponseDTO> {
         val jogoResponse = service.cadastrar(dto)
-        val uri = uriBuilder.path("/Jogos/${jogoResponse.id}")
+        val uri = uriBuilder.path("/Jogo/${jogoResponse.id}")
             .build().toUri()
         return ResponseEntity.created(uri).body(jogoResponse)
     }

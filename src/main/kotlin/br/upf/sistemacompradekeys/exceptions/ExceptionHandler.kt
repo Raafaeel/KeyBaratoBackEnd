@@ -1,6 +1,6 @@
-package br.upf.sistemaeventos.exceptions
+package br.upf.sistemacompradekeys.exceptions
 
-import br.upf.sistemaeventos.dtos.ErrorResponseDTO
+import br.upf.sistemacompradekeys.dtos.ErrorResponseDTO
 import jakarta.servlet.http.HttpServletRequest
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.MethodArgumentNotValidException

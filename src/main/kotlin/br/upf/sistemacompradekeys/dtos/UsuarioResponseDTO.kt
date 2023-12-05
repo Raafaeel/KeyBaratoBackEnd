@@ -1,8 +1,7 @@
-package br.upf.sistemaeventos.dtos
+package br.upf.sistemacompradekeys.dtos
 
 data class UsuarioResponseDTO(
-    val cpf: Int,
-    val username: String,
+    val cpf: Long,
     val regiao: String,
     val telefone: String,
     val email: String

@@ -1,12 +1,12 @@
-package br.upf.sistemaeventos.dtos
+package br.upf.sistemacompradekeys.dtos
 
-import br.upf.sistemaeventos.model.Compra
-import br.upf.sistemaeventos.model.StatusDisp
+import br.upf.sistemacompradekeys.model.Compra
+import br.upf.sistemacompradekeys.model.StatusDisp
 
 
 data class JogoResponseDTO (
         val id: Long?,
-        val key: String,
+        val chave: String,
         val regiao: String,
         val preco: Double,
         val descricao: String,

@@ -1,8 +1,8 @@
-package br.upf.sistemaeventos.controller
+package br.upf.sistemacompradekeys.controller
 
-import br.upf.sistemaeventos.dtos.UsuarioDTO
-import br.upf.sistemaeventos.dtos.UsuarioResponseDTO
-import br.upf.sistemaeventos.service.UsuarioService
+import br.upf.sistemacompradekeys.dtos.UsuarioDTO
+import br.upf.sistemacompradekeys.dtos.UsuarioResponseDTO
+import br.upf.sistemacompradekeys.service.UsuarioService
 import jakarta.transaction.Transactional
 import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.util.UriComponentsBuilder
 
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/usuario")
 class UsuarioController(val service: UsuarioService) {
 
     @GetMapping
@@ -38,7 +38,7 @@ class UsuarioController(val service: UsuarioService) {
                  uriBuilder: UriComponentsBuilder
     ): ResponseEntity<UsuarioResponseDTO> {
         val userResponse = service.cadastrar(dto)
-        val uri = uriBuilder.path("/usuarios/${userResponse.cpf}")
+        val uri = uriBuilder.path("/usuario/${userResponse.cpf}")
             .build().toUri()
         return ResponseEntity.created(uri).body(userResponse)
     }

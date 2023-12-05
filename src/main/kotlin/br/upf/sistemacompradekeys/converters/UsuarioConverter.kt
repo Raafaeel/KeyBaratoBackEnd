@@ -1,9 +1,8 @@
-package br.upf.sistemaeventos.converters
+package br.upf.sistemacompradekeys.converters
 
-import br.upf.sistemaeventos.dtos.UsuarioDTO
-import br.upf.sistemaeventos.dtos.UsuarioResponseDTO
-import br.upf.sistemaeventos.model.Usuario
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
+import br.upf.sistemacompradekeys.dtos.UsuarioDTO
+import br.upf.sistemacompradekeys.dtos.UsuarioResponseDTO
+import br.upf.sistemacompradekeys.model.Usuario
 import org.springframework.stereotype.Component
 
 @Component
@@ -11,7 +10,6 @@ class UsuarioConverter {
     fun toUsuarioResponseDTO(usuario: Usuario): UsuarioResponseDTO {
         return UsuarioResponseDTO(
             cpf = usuario.cpf,
-            username = usuario.username,
             regiao = usuario.regiao,
             telefone = usuario.telefone,
             email = usuario.email
@@ -25,7 +23,6 @@ class UsuarioConverter {
             regiao = dto.regiao,
             telefone = dto.telefone,
             email = dto.email,
-            senha = BCryptPasswordEncoder().encode(dto.senha)
         )
     }
 }

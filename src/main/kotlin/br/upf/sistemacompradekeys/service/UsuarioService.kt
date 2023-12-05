@@ -1,10 +1,10 @@
-package br.upf.sistemaeventos.service
+package br.upf.sistemacompradekeys.service
 
-import br.upf.sistemaeventos.converters.UsuarioConverter
-import br.upf.sistemaeventos.dtos.UsuarioDTO
-import br.upf.sistemaeventos.dtos.UsuarioResponseDTO
-import br.upf.sistemaeventos.exceptions.NotFoundException
-import br.upf.sistemaeventos.repository.UsuarioRepository
+import br.upf.sistemacompradekeys.converters.UsuarioConverter
+import br.upf.sistemacompradekeys.dtos.UsuarioDTO
+import br.upf.sistemacompradekeys.dtos.UsuarioResponseDTO
+import br.upf.sistemacompradekeys.exceptions.NotFoundException
+import br.upf.sistemacompradekeys.repository.UsuarioRepository
 import org.springframework.stereotype.Service
 
 private const val USUARIO_NOT_FOUND_MESSAGE = "Usuário não encontrado!"

@@ -1,4 +1,4 @@
-package br.upf.sistemaeventos.model
+package br.upf.sistemacompradekeys.model
 
 enum class StatusDisp {
     PREVENDA,

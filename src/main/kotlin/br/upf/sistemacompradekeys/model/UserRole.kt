@@ -1,5 +1,5 @@
-package br.upf.sistemaeventos.model
+package br.upf.sistemacompradekeys.model
 
 enum class UserRole {
-    VENDOR, USER
+    VENDOR, ADMIN
 }

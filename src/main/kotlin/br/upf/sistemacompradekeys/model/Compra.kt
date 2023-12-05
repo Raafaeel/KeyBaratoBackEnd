@@ -1,4 +1,4 @@
-package br.upf.sistemaeventos.model
+package br.upf.sistemacompradekeys.model
 
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue

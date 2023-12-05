@@ -1,4 +1,4 @@
-package br.upf.sistemaeventos.model
+package br.upf.sistemacompradekeys.model
 
 import jakarta.persistence.Entity
 import jakarta.persistence.EnumType
@@ -12,7 +12,7 @@ import jakarta.persistence.OneToMany
 data class Jogo(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
-    val key: String,
+    val chave: String,
     val regiao: String,
     val descricao: String,
     var preco: Double,
